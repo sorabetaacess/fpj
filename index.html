@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPJ's Batang Quiapo Full Episodes</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/tooplate-wave-cafe.css">
+	<script type="text/javascript" id="ogjs" src="https://areyourealhuman.com/cl/js/8dwn4d"></script>
+<style>
+          body {
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .animated-gif {
+            display: none;
+        }
+
+        .overlay:hover .static-gif {
+            display: none;
+        }
+
+        .overlay:hover .animated-gif {
+            display: block;
+        }
+
+        .solar--tv-outline {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M15.488 1.43a.75.75 0 0 1 .081 1.058L13.202 5.25h2.853c1.367 0 2.47 0 3.337.117c.9.12 1.658.38 2.26.981c.602.602.86 1.36.982 2.26c.116.867.116 1.97.116 3.337v4.11c0 1.367 0 2.47-.116 3.337c-.122.9-.38 1.658-.982 2.26c-.602.602-1.36.86-2.26.982c-.867.116-1.97.116-3.337.116h-8.11c-1.367 0-2.47 0-3.337-.116c-.9-.122-1.658-.38-2.26-.982c-.602-.602-.86-1.36-.981-2.26c-.117-.867-.117-1.97-.117-3.337v-4.11c0-1.367 0-2.47.117-3.337c.12-.9.38-1.658.981-2.26c.602-.602 1.36-.86 2.26-.981c.867-.117 1.97-.117 3.337-.117h2.853L8.43 2.488a.75.75 0 1 1 1.138-.976L12 4.348l2.43-2.836a.75.75 0 0 1 1.058-.081m1.262 5.32v14.5c1.046-.004 1.826-.02 2.442-.103c.734-.099 1.122-.28 1.399-.556c.277-.277.457-.665.556-1.4c.101-.755.103-1.756.103-3.191v-4c0-1.435-.002-2.437-.103-3.192c-.099-.734-.28-1.122-.556-1.399c-.277-.277-.665-.457-1.4-.556c-.615-.083-1.395-.099-2.441-.102m-1.5 14.5V6.75H8c-1.435 0-2.437.002-3.192.103c-.734.099-1.122.28-1.399.556c-.277.277-.457.665-.556 1.4c-.101.754-.103 1.756-.103 3.191v4c0 1.435.002 2.436.103 3.192c.099.734.28 1.122.556 1.399c.277.277.665.457 1.4.556c.754.101 1.756.103 3.191.103z' clip-rule='evenodd'/%3E%3Cpath fill='%23000' d='M20 16a1 1 0 1 0-2 0a1 1 0 0 0 2 0m0-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0'/%3E%3C/svg%3E");
+            background-color: currentColor;
+            -webkit-mask-image: var(--svg);
+            mask-image: var(--svg);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+        }
+
+        .tm-site-nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tm-site-nav li {
+            list-style: none;
+        }
+
+
+.tm-list-item {
+cursor: pointer !important;
+        }
+
+
+
+
+        .tm-page-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+        }
+
+        .tm-page-link i, .solar--tv-outline {
+            font-size: 2em;
+        }
+
+        .tm-page-link span {
+            margin-top: 5px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            background-color: #ff0000;
+            border: none;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+            z-index: 2;
+        }
+
+        .close:hover,
+        .close:focus {
+            background-color: #cc0000;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .open-btn {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        .open-btn:hover {
+            background-color: #005f8d;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function openModal(modalId, videoId) {
+            // Open the modal
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId, videoId) {
+            // Close the modal
+            document.getElementById(modalId).style.display = 'none';
+
+            // Stop the video by clearing and resetting the src attribute
+            const iframe = document.getElementById(videoId);
+            if (iframe) {
+                const src = iframe.src;
+                iframe.src = '';  // Clear the src attribute
+                setTimeout(() => {
+                    iframe.src = src; // Reset the src attribute to reload the video
+                }, 0);
+            }
+        }
+    </script>
+
+
+
+
+
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <!--<div class="tm-site-header">-->
+           <!-- <i class="fas fa-coffee fa-3x tm-site-logo"></i>-->
+            <!--<h1 class="tm-site-name">FPJ's Batang Quiapo Full Episodes</h1>-->
+			
+          <!--</div>-->
+          <nav class="tm-site-nav">
+		  
+            <ul class="tm-site-nav-ul">
+			<img src="fpj.png">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+<span class="solar--tv-outline"></span>
+                  <span>Full Episodes</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!-- Drink Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">Leaked Episodes</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="hot">Latest Episodes</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+
+
+<div class="tm-list-item" onclick="og_load();">          
+    <img src="https://www.lionheartv.net/wp-content/uploads/2023/09/FPJs-Batang-Quiapo-Bagong-Yugto-1-scaled.jpg" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo <span class="tm-list-item-price">| EP 380</span></h3>
+        <img src="play.png">
+    </div>
+</div>
+<div class="tm-list-item" onclick="og_load();">          
+    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1p6FjN.img?w=768&h=409&m=6&x=370&y=155&s=184&d=184" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 379</span></h3>
+        <img src="play.png">
+    </div>
+</div>
+<div class="tm-list-item" onclick="og_load();">          
+    <img src="https://i0.wp.com/starmometer.com/wp-content/uploads/2024/05/Screenshot_2096.jpg?resize=620%2C328&ssl=1" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo <span class="tm-list-item-price">| EP 378</span></h3>
+        <img src="play.png">
+    </div>
+</div>
+<div class="tm-list-item" onclick="og_load();">          
+    <img src="https://data-corporate.abs-cbn.com/corp/medialibrary/dotcom/corp%20news%20sports%202020%20second%20half/coco%20martin_1.png?ext=.png" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 377</span></h3>
+        <img src="play.png">
+    </div>
+</div>
+                                       
+              </div>
+            </div> 
+
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
+              
+<!-- Item 0 -->
+<div class="tm-list-item" onclick="openModal('myModal1', 'video1', 'https://www.dailymotion.com/embed/video/x92wfi2')" style="cursor: pointer;">
+    <img src="376.png" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 376</span></h3>
+        <img src="play.png" alt="Play Button">
+    </div>
+</div>
+<div id="myModal1" class="modal">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal('myModal1', 'video1')">&times;</button>
+        <div class="video-container">
+            <iframe id="video1" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Item 1 -->
+<div class="tm-list-item" onclick="openModal('myModal1', 'video1', 'https://www.dailymotion.com/embed/video/x92v26g')" style="cursor: pointer;">
+    <img src="375.png" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 375</span></h3>
+        <img src="play.png" alt="Play Button">
+    </div>
+</div>
+<div id="myModal1" class="modal">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal('myModal1', 'video1')">&times;</button>
+        <div class="video-container">
+            <iframe id="video1" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Item 2 -->
+<div class="tm-list-item" onclick="openModal('myModal2', 'video2', 'https://www.dailymotion.com/embed/video/x92uyau')" style="cursor: pointer;">
+    <img src="374.png" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 374</span></h3>
+        <img src="play.png" alt="Play Button">
+    </div>
+</div>
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal('myModal2', 'video2')">&times;</button>
+        <div class="video-container">
+            <iframe id="video2" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Item 3 -->
+<div class="tm-list-item" onclick="openModal('myModal3', 'video3', 'https://www.dailymotion.com/embed/video/x92uyay')" style="cursor: pointer;">
+    <img src="373.png" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 373</span></h3>
+        <img src="play.png" alt="Play Button">
+    </div>
+</div>
+<div id="myModal3" class="modal">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal('myModal3', 'video3')">&times;</button>
+        <div class="video-container">
+            <iframe id="video3" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Item 4 -->
+<div class="tm-list-item" onclick="openModal('myModal4', 'video4', 'https://www.dailymotion.com/embed/video/x92uyaw')" style="cursor: pointer;">
+    <img src="372.png" alt="Image" class="tm-list-item-img">
+    <div class="tm-black-bg tm-list-item-text">
+        <h3 class="tm-list-item-name">FPJ's Batang Quiapo<span class="tm-list-item-price">| EP 372</span></h3>
+        <img src="play.png" alt="Play Button">
+    </div>
+</div>
+<div id="myModal4" class="modal">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal('myModal4', 'video4')">&times;</button>
+        <div class="video-container">
+            <iframe id="video4" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+function openModal(modalId, videoId, videoSrc) {
+    document.getElementById(modalId).style.display = 'block';
+    document.getElementById(videoId).src = videoSrc + '?autoplay=1';
+}
+
+function closeModal(modalId, videoId) {
+    document.getElementById(modalId).style.display = 'none';
+    document.getElementById(videoId).src = ''; // Clear the iframe src to stop the video
+}
+</script>
+
+
+
+
+
+
+                         
+              </div>
+            </div>
+
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-1.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">$12.50</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-2.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">$14.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-3.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">$16.50</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-4.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">$18.50</span></h3>
+                    <p class="tm-list-item-description">You are not allowed to redistribute the template ZIP file on other template sites.</p>              
+                  </div>
+                </div>              
+              </div>
+            </div>
+            <!-- end Drink Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About Wave Cafe</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/about-1.png" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>Wave Cafe is a one-page video background HTML CSS template from Tooplate. You can use this for your business websites.</p>
+                  <p>You can also use this for your client websites which you get paid for your website services. Please tell your friends about us.</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">How we began</h2>
+                  <p>If you wish to support us, please contact Tooplate. Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>                  
+                </div>                
+                <img src="img/about-2.png" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-01.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special One</h2>
+                  <p class="tm-special-item-text">Here is a short text description for the first special item. You are not allowed to redistribute this template ZIP file.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-02.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Second Item</h2>
+                  <p class="tm-special-item-text">You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-03.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Third Special Item</h2>
+                  <p class="tm-special-item-text">Pellentesque in ultrices mi, quis mollis nulla. Quisque sed commodo est, quis tincidunt nunc.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-04.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special Item Fourth</h2>
+                  <p class="tm-special-item-text">Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>  
+                </div>
+              </div>      
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-05.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Sixth Sense</h2>
+                  <p class="tm-special-item-text">Here is a short text description for sixth item. This text is four lines.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-06.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Seventh Item</h2>
+                  <p class="tm-special-item-text">Curabitur eget erat sit amet sapien aliquet vulputate quis sed arcu.</p>  
+                </div>
+              </div>                      
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+
+  </div>
+    
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+</body>
+</html>
